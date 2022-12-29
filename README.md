@@ -1,4 +1,4 @@
-This image is based on `cimg/node:12.18`. It adds `openapi-diff`. The main purpose of this image is because when using CircleCI, volume mount does not work with docker-in-docker, which is required when calling dockerized `openapi-diff`. So this image avoids using dockerized `openapi-diff` by having it installed locally.
+This image is based on `cimg/node:14.21.1`. It adds `openapi-diff`. The main purpose of this image is because when using CircleCI, volume mount does not work with docker-in-docker, which is required when calling dockerized `openapi-diff`. So this image avoids using dockerized `openapi-diff` by having it installed locally.
 
 ## Build and deploy
 

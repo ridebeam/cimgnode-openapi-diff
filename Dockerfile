@@ -4,7 +4,7 @@ RUN git clone --single-branch --branch 2.0.0-beta.8 https://github.com/OpenAPITo
 
 RUN cd /build/openapi-diff && ./mvnw -V -B -ff -P docker package -q
 
-FROM cimg/node:12.18
+FROM cimg/node:14.21.1
 WORKDIR /app
 
 COPY --from=build /build/openapi-diff/cli/target/openapi-diff-cli-*-all.jar /app/openapi-diff.jar
